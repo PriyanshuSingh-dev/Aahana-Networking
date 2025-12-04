@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/aha" type="image/x-icon">
+    <title>OTP Service  || Aahana Networking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Regular Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+    <!-- Solid Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+    <!-- Bold Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="images/aahana-logo-removebg.png" height="70" width="150">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="about.html">ABOUT</a></li>
+
+                <!-- Mega Dropdown -->
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="servicesDropdown">
+                        SERVICES
+                    </a>
+
+                    <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+                        <div class="mega-container">
+                            <div class="row gx-4">
+
+                                <!-- Column 1 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms.html">Bulk SMS</a></li>
+                                        <li><a href="ivr.html">IVR Service</a></li>
+                                        <li><a href="smpp.html">SMPP Gateway</a></li>
+                                        <li><a href="voice-call.html">Voice Call</a></li>
+                                        <li><a href="promotional-sms.html">Promotional SMS</a></li>
+                                        <li><a href="transactional-sms.html">Transactional SMS</a></li>
+                                        <li><a href="lead-generation.html">Lead Generation</a></li>
+                                        <li><a href="otp-service.html">OTP Service</a></li>
+                                        <li><a href="long-short-Code.html">Long Short Code</a></li>
+                                        <li><a href="transactional-whatsapp.html">Transactional WhatsApp</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="transactional-email.html">Transactional Email</a></li>
+                                        <li><a href="landing-page-website-design-company.html">Landing Page Website Design</a></li>
+                                        <li><a href="php-website-development-company.html">PHP Website Development</a></li>
+                                        <li><a href="laravel-website-development-in-delhi.html">Laravel Website Development</a></li>
+                                        <li><a href="codeigniter-website-development-in-delhi.html">CodeIgniter Development</a></li>
+                                        <li><a href="python-website-development-in-delhi.html">Python Development</a></li>
+                                        <li><a href="reactjs-website-development-in-delhi.html">ReactJS Development</a></li>
+                                        <li><a href="mobile-app-development-in-delhi.html">Mobile App Development</a></li>
+                                        <li><a href="flutter-app-development-in-delhi.html">Flutter App Development</a></li>
+                                        <li><a href="ecommerce-website-app-development-in-delhi.html">Ecommerce Website Development</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="corporate-website-app-development-company.html">Corporate Website Development</a></li>
+                                        <li><a href="school-website-app-development-company.html">School Website Development</a></li>
+                                        <li><a href="best-digital-marketing-company.html">Best Digital Marketing Company</a></li>
+                                        <li><a href="seo-services.html">SEO Services</a></li>
+                                        <li><a href="social-media-optimization-services.html">Social Media Optimization</a></li>
+                                        <li><a href="lead-generation-service-in-delhi.html">Lead Generation Service in Delhi</a></li>
+                                        <li><a href="bulk-sms-service-in-delhi.html">Bulk SMS Service in Delhi</a></li>
+                                        <li><a href="ppc-services.html">PPC Services</a></li>
+                                        <li><a href="whatsapp-api-service-provider-in-delhi.html">WhatsApp API Service Provider</a></li>
+                                        <li><a href="ivr-service-in-delhi.html">IVR Service in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms-services-in-india.html">Bulk SMS Services in India</a></li>
+                                        <li><a href="ivr-service-india.html">IVR Service India</a></li>
+                                        <li><a href="voice-call-service-india.html">Voice Call Service India</a></li>
+                                        <li><a href="promotional-sms-provider-in-india.html">Promotional SMS Provider in India</a></li>
+                                        <li><a href="transactional-sms-india.html">Transactional SMS India</a></li>
+                                        <li><a href="smpp-gateway-service-in-india.html">SMPP Gateway Service in India</a></li>
+                                        <li><a href="lead-generation-service-in-india.html">Lead Generation Service in India</a></li>
+                                        <li><a href="transactional-whatsapp-in-india.html">Transactional WhatsApp in India</a></li>
+                                        <li><a href="web-development-in-delhi.html">Web Development in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- TECHNOLOGIES Mega Dropdown -->
+<!-- TECHNOLOGIES Simple Mega Dropdown (Single Column) -->
+<li class="nav-item dropdown tech-dropdown">
+    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="techDropdown">
+        TECHNOLOGIES
+    </a>
+
+    <div class="dropdown-menu tech-menu" aria-labelledby="techDropdown">
+        <ul class="tech-links">
+            <li><a href="vuejs-framework.html">VueJS Framework</a></li>
+            <li><a href="nodejs-framework.html">NodeJS Framework</a></li>
+            <li><a href="nextjs-framework.html">NextJS Framework</a></li>
+            <li><a href="tailwind-css.html">Tailwind CSS</a></li>
+            <li><a href="react-js.html">React JS</a></li>
+            <li><a href="android-development.html">Android Development</a></li>
+            <li><a href="java-development.html">Java Development</a></li>
+            <li><a href="django-framework.html">Django Framework</a></li>
+            <li><a href="python-development.html">Python Development</a></li>
+            <li><a href="codeigniter-development.html">Codeigniter Development</a></li>
+            <li><a href="laravel-development.html">Laravel Development</a></li>
+            <li><a href="php-development.html">PHP Development</a></li>
+            <li><a href="flutter.html">Flutter Development</a></li>
+        </ul>
+    </div>
+</li>
+
+
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="blog.html">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="pay-now.html">PAY NOW</a></li>
+            </ul>
+
+            <div class="end">
+                <a href="https://wa.me/8810550514" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
+                <a href="https://wa.me/8810550514" class="btn text-light quote-btn px-4 fw-semibold">Request A Quote</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+    <!-- main page layout -->
+    <section class="transaction-banner second">
+        <div class="transaction-content">
+            <h1>Best OTP SMS Service</h1>
+            <p>
+                Our OTP SMS services provide secure, instant authentication, enhancing user verification and data protection efficiently.
+            </p>
+            <a href="#" class="transaction-btn">Call Now</a>
+        </div>
+
+        <div class="banner-img">
+            <!-- <img src="images/services/bulk-sms.jpg" alt="Bulk SMS Banner"> -->
+        </div>
+    </section>
+
+    <!-- ================= MAIN SECTION ================= -->
+    <section class="service-page">
+
+        <div class="content-left">
+
+            <h2>OTP Services</h2>
+
+            <p> Our ONE TIME PASSWORD(OTP) is a password that consists of a series of numbers and characters, such as 0206UR, and is only valid for one login. With our OTPs, you may get strong one-time authorization, better security, and protection against PIN attacks. Our OTP is a One-Time Password provided to registered users who have set up accounts for online services. Our OTP message is sent to the userÃ¢â‚¬â„¢s mobile phones through SMS when they log in to their accounts. This is a four-to-six digit code that has only been used once. Our OTP code has a time restriction; it will be confirmed in a matter of minutes, and then it will expire. You have the option of requesting another.
+<br>
+These codes are used to keep your information safe. Our goal is to ensure that businesses are secure and convenient. Every business industry uses our OTP SMS as a form of security. Our OTP message assures customers that their personal information and data are secure. Itsolutions4india offers an OTP message service in Delhi to verify the identity of your clients if you wish to provide two-step verification with OTP SMS. It eliminates the possibility of cheating of any type.</p>
+            <!-- <img src="images/services/transactional-sms.jpg" alt=""> -->
+           
+            <h3>What is OTP SMS ?</h3>
+            <p>
+                Our OTP SMS is a security feature that generates a one-time password (OTP) and sends it to the registered user's phone through SMS. The user can receive the OTP and enter it on the device that will be used for authentication. Our One-Time Password (OTP) is an extra layer of protection used to validate a user's identity during the registration, logging, online transaction, or password reset process. As a result, our OTP will defend your site from a variety of threats while also securing end-users' digital identities. However, our OTP is only valid and usable for a limited period.
+<br>
+In Delhi, we offer SMS-based confirmation solutions that overcome high data volumes, message delays, and geographic barriers. Our OTPs are extremely useful in online transactions such as bill payment confirmation, account activation, user registration verification, mobile number validation, and other situations where strong authentication is required. Banks, schools, shipping, e-commerce websites, and other companies all use Itsolutions4india's OTP SMS services in Delhi. These codes are used in online transactions such as payments, account activation, and user registration verification, among other things.
+            </p> 
+
+
+            <h3>Method of using our OTP SMS Service provider in Delhi</h3>
+             <ul class="list">
+                <li>Protect your website and apps with an extra layer of protection.</li>
+                <li>Use our OTP Verification to ensure the security of your users' information.</li>
+                 
+                <li>To complete a transaction safely, add an extra layer of security with our OTP verification.</li>
+                <li>Use our OTP service to validate users before password resets instead of providing links or verification codes through email</li>
+             </ul>
+
+             <h3>The benefits of using our OTP SMS Service in Delhi</h3>
+             <ul class="list">
+                <li><b>Innovative Monitoring System:</b> Our innovative monitoring system ensures that Itsolutions4India OTP SMS uses unique dedicated channels. OTP messages are given highest priority to reach clients instantly, helping you build strong trust with fast and smooth verification.</li>
+
+<li><b>Private Security:</b> Privacy and compliance are top priorities. Itsolutions4India OTP SMS helps protect your business from fraudsters, preventing unauthorized access to sensitive accounts, information, and addresses.</li>
+
+<li><b>Internal Productivity:</b> Our OTP SMS not only benefits customers but also boosts internal company security. Confidential documents, software, passwords, and internal data can be safely shared using our secure OTP service.</li>
+
+<li><b>Reset Password:</b> Many users forget passwords, and OTP SMS provides a quick and secure solution for password recovery.</li>
+
+<li><b>Reduce Data Theft:</b> OTP codes help prevent identity theft, hacking, phishing, and other cybercrimes by adding strong authentication.</li>
+
+<li><b>Increases Flexibility and Productivity:</b> Multiple users can securely log in to shared systems or databases. Businesses can allow employees to work remotely with strong OTP-based security.</li>
+
+<li><b>Secure Payments:</b> As per RBI guidelines, OTP SMS is mandatory for secure online payments. Our OTP system ensures safe transaction authentication.</li>
+
+<li><b>User Account Security:</b> Users can make their accounts more secure with 2FA (Two-Factor Authentication). A login from a new device triggers an OTP for safety.</li>
+
+<li><b>Highly Secure:</b> Our one-time passwords are valid for only one minute, ensuring maximum security. Expired OTPs cannot be misused, reducing the risk of fraud.</li>
+
+<li><b>Developers Friendly:</b> Our OTP SMS API is easy to integrate into third-party applications, software, or your own website for instant authentication.</li>
+
+             </ul>
+
+        </div>
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Related Services -->
+            <div class="sidebar-box">
+                <h4>Related Services</h4>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i><a href="#">WhatsApp Api Service Provider in Delhi</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Promotional SMS Provider in India</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Best Digital Marketing Company</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Laravel Website Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Ecommerce Website & App Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Mobile App Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Social Media Optimization</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Web Development in Delhi</a></li>
+                </ul>
+            </div>
+
+            <!-- Why choose -->
+            <div class="sidebar-box">
+                <h4>Why You Select ITSolution4India?</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Work with Full Attention</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Project Delivered on Time</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Full Backup Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Affordable Pricing</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 16x7 WhatsApp Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 12x6 Call Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 5 Star Rated Organisation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="sidebar-box">
+                <h4>Contact With Us</h4>
+
+                <p><a href="#"><i class="fa-solid fa-location-dot"></i>
+                        1/1 3rd Floor, Vishal Mega Mart, Tilak Nagar, New Delhi – 110018, INDIA</a>
+                </p>
+
+                <p><a href="tel:+919711347474"><i class="fa-solid fa-phone"></i> +91-8595748495 </a></p>
+
+                <p><a href="mailto:Sales@Aahana Networking"><i class="fa-solid fa-envelope"></i>
+                        Sales@Aahana Networking</a></p>
+
+                <p><a href="mailto:aahnanetworking@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        aahnanetworking@gmail.com</a></p>
+            </div>
+
+        </aside>
+
+    </section>
+    <!-- main page layout -->
+
+
+
+    <!-- footer and newsletter  -->
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <h2 class="newsletter-title">Get New Insights Weekly</h2>
+                    <p class="newsletter-text">
+                        "Stay updated with Aahana Networking! Get the latest trends in website & app
+                        development and digital marketing delivered to your inbox."
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="newsletter-box d-flex">
+                        <input type="email" class="newsletter-input" placeholder="Email Your Address">
+                        <button class="newsletter-btn">Subscribe →</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section pt-5 pb-4">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <img src="img/logo.png" width="150" alt="">
+                    <p class="footer-about mt-3">
+                        "Aahana Networking specializes in innovative website and app development,
+                        coupled with result-driven digital marketing to empower businesses."
+                    </p>
+                    <a href="#" class="become-btn">Become Partner →</a>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+
+                    <p><i class="fa-solid fa-envelope"></i> aahnanetworking@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8595748495 </p>
+                    <p><i class="fa-brands fa-skype"></i> Call Now</p>
+                    <p><i class="fa-solid fa-location-dot"></i>
+                        1/1 3rd Floor, Vishal Mega Mart
+                        Tilak Nagar New Delhi – 110018, INDIA
+                    </p>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pay Now</a></li>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation & Refund Policy</a></li>
+                        <li><a href="#">Terms Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Latest Blog -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Latest Blogs</h5>
+                    <div class="footer-blog d-flex mt-3">
+                        <img src="img/blog1.png" class="blog-thumb" alt="">
+                        <div class="ms-3">
+                            <small><i class="fa-regular fa-calendar"></i> 06 Jul, 2025</small>
+                            <p class="blog-title">The Ultimate Guide to Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <section class="awards-footer-section">
+        <div class="container">
+
+            <!-- Left Text -->
+            <div class="awards-text">
+                <h2>Top Web & App Development and<br> Digital Marketing Companies</h2>
+                <p>
+                    "We serve diverse industries, including healthcare, e-commerce, education, finance,
+                    real estate, and startups, delivering tailored web, app, and digital marketing solutions."
+                </p>
+            </div>
+
+            <!-- Awards Logos -->
+            <div class="awards-logos">
+                <div class="award-item"><img src="images/b1.png" alt=""></div>
+                <div class="award-item"><img src="images/b2.png" alt=""></div>
+                <div class="award-item"><img src="images/b3.png" alt=""></div>
+                <div class="award-item"><img src="images/b4.png" alt=""></div>
+            </div>
+
+            <hr class="awards-divider">
+
+            <!-- Social Icons + Copyright -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <p class="copy-text">© 2025. All Rights Reserved By Aahana Networking</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer and newsletter  -->
+
+    <!-- testi js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- testi js  -->
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 80; // lower = faster
+
+        const options = {
+            threshold: 0.5
+        };
+
+        const startCounting = (entry) => {
+            if (!entry.isIntersecting) return;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = +counter.innerText;
+
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 25);
+                    } else {
+                        counter.innerText = target;
+
+                        // Add suffixes just like your UI
+                        if (target === 500) counter.innerText = "500M+";
+                        else if (target === 13) counter.innerText = "13+";
+                        else if (target === 250) counter.innerText = "250+";
+                        else if (target === 1214) counter.innerText = "1214+";
+                        else if (target === 10) counter.innerText = "10+";
+                        else if (target === 98.07) counter.innerText = "98.07%";
+                    }
+                };
+
+                updateCount();
+            });
+        };
+
+        // Run animation only when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => startCounting(entry));
+        }, options);
+
+        observer.observe(document.querySelector(".about-stats-section"));
+    </script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

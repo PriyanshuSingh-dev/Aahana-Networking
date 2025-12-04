@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/aha" type="image/x-icon" />
+  <title>React JS || Aahana Networking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOOTSTRAP 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Regular Rounded Icons -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+
+  <!-- Solid Rounded Icons -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+
+  <!-- Bold Rounded Icons -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="images/aahana-logo-removebg.png" height="70" width="150">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="about.html">ABOUT</a></li>
+
+                <!-- Mega Dropdown -->
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="servicesDropdown">
+                        SERVICES
+                    </a>
+
+                    <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+                        <div class="mega-container">
+                            <div class="row gx-4">
+
+                                <!-- Column 1 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms.html">Bulk SMS</a></li>
+                                        <li><a href="ivr.html">IVR Service</a></li>
+                                        <li><a href="smpp.html">SMPP Gateway</a></li>
+                                        <li><a href="voice-call.html">Voice Call</a></li>
+                                        <li><a href="promotional-sms.html">Promotional SMS</a></li>
+                                        <li><a href="transactional-sms.html">Transactional SMS</a></li>
+                                        <li><a href="lead-generation.html">Lead Generation</a></li>
+                                        <li><a href="otp-service.html">OTP Service</a></li>
+                                        <li><a href="long-short-Code.html">Long Short Code</a></li>
+                                        <li><a href="transactional-whatsapp.html">Transactional WhatsApp</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="transactional-email.html">Transactional Email</a></li>
+                                        <li><a href="landing-page-website-design-company.html">Landing Page Website Design</a></li>
+                                        <li><a href="php-website-development-company.html">PHP Website Development</a></li>
+                                        <li><a href="laravel-website-development-in-delhi.html">Laravel Website Development</a></li>
+                                        <li><a href="codeigniter-website-development-in-delhi.html">CodeIgniter Development</a></li>
+                                        <li><a href="python-website-development-in-delhi.html">Python Development</a></li>
+                                        <li><a href="reactjs-website-development-in-delhi.html">ReactJS Development</a></li>
+                                        <li><a href="mobile-app-development-in-delhi.html">Mobile App Development</a></li>
+                                        <li><a href="flutter-app-development-in-delhi.html">Flutter App Development</a></li>
+                                        <li><a href="ecommerce-website-app-development-in-delhi.html">Ecommerce Website Development</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="corporate-website-app-development-company.html">Corporate Website Development</a></li>
+                                        <li><a href="school-website-app-development-company.html">School Website Development</a></li>
+                                        <li><a href="best-digital-marketing-company.html">Best Digital Marketing Company</a></li>
+                                        <li><a href="seo-services.html">SEO Services</a></li>
+                                        <li><a href="social-media-optimization-services.html">Social Media Optimization</a></li>
+                                        <li><a href="lead-generation-service-in-delhi.html">Lead Generation Service in Delhi</a></li>
+                                        <li><a href="bulk-sms-service-in-delhi.html">Bulk SMS Service in Delhi</a></li>
+                                        <li><a href="ppc-services.html">PPC Services</a></li>
+                                        <li><a href="whatsapp-api-service-provider-in-delhi.html">WhatsApp API Service Provider</a></li>
+                                        <li><a href="ivr-service-in-delhi.html">IVR Service in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms-services-in-india.html">Bulk SMS Services in India</a></li>
+                                        <li><a href="ivr-service-india.html">IVR Service India</a></li>
+                                        <li><a href="voice-call-service-india.html">Voice Call Service India</a></li>
+                                        <li><a href="promotional-sms-provider-in-india.html">Promotional SMS Provider in India</a></li>
+                                        <li><a href="transactional-sms-india.html">Transactional SMS India</a></li>
+                                        <li><a href="smpp-gateway-service-in-india.html">SMPP Gateway Service in India</a></li>
+                                        <li><a href="lead-generation-service-in-india.html">Lead Generation Service in India</a></li>
+                                        <li><a href="transactional-whatsapp-in-india.html">Transactional WhatsApp in India</a></li>
+                                        <li><a href="web-development-in-delhi.html">Web Development in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- TECHNOLOGIES Mega Dropdown -->
+<!-- TECHNOLOGIES Simple Mega Dropdown (Single Column) -->
+<li class="nav-item dropdown tech-dropdown">
+    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="techDropdown">
+        TECHNOLOGIES
+    </a>
+
+    <div class="dropdown-menu tech-menu" aria-labelledby="techDropdown">
+        <ul class="tech-links">
+            <li><a href="vuejs-framework.html">VueJS Framework</a></li>
+            <li><a href="nodejs-framework.html">NodeJS Framework</a></li>
+            <li><a href="nextjs-framework.html">NextJS Framework</a></li>
+            <li><a href="tailwind-css.html">Tailwind CSS</a></li>
+            <li><a href="react-js.html">React JS</a></li>
+            <li><a href="android-development.html">Android Development</a></li>
+            <li><a href="java-development.html">Java Development</a></li>
+            <li><a href="django-framework.html">Django Framework</a></li>
+            <li><a href="python-development.html">Python Development</a></li>
+            <li><a href="codeigniter-development.html">Codeigniter Development</a></li>
+            <li><a href="laravel-development.html">Laravel Development</a></li>
+            <li><a href="php-development.html">PHP Development</a></li>
+            <li><a href="flutter.html">Flutter Development</a></li>
+        </ul>
+    </div>
+</li>
+
+
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="blog.html">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="pay-now.html">PAY NOW</a></li>
+            </ul>
+
+            <div class="end">
+                <a href="https://wa.me/8810550514" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
+                <a href="https://wa.me/8810550514" class="btn text-light quote-btn px-4 fw-semibold">Request A Quote</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+  <!-- main page layout -->
+  <section class="voice-banner second">
+    <div class="voice-content">
+      <h1>React JS</h1>
+      <p>
+       ReactJS React.js is a JavaScript library for building dynamic user interfaces using reusable, component-based architecture efficiently.
+      </p>
+      <a href="#" class="voice-btn">Call Now</a>
+    </div>
+
+    <div class="banner-img">
+      <!-- <img src="images/services/bulk-sms.jpg" alt="Bulk SMS Banner"> -->
+    </div>
+  </section>
+
+  <!-- ================= MAIN SECTION ================= -->
+  <section class="service-page">
+    <div class="content-left">
+      <!-- <h2>Transactional WhatsApp Service In India</h2> -->
+
+      <p>
+       React.js is a popular JavaScript library used for building user interfaces, particularly for single-page applications (SPAs) where you need a fast, dynamic, and interactive user experience. Developed and maintained by Facebook, React simplifies the process of building complex UIs by breaking them down into smaller, reusable components. At Aahana Networking, we utilize React.js to create modern, scalable, and high-performance web applications that deliver exceptional user experiences.
+      <h3>What is React.js?</h3>
+     React.js is a JavaScript library that enables developers to build component-based UIs. It uses a virtual DOM (Document Object Model) to efficiently update and render the user interface by minimizing the number of direct updates to the actual DOM. This approach leads to faster performance and a smoother user experience. React is known for its declarative syntax, making it easier to design interactive UIs with minimal code.
+     <br>
+      <b>Key features of React.js include:</b><br><br>
+      <ul class="list">
+        <li><b>Component-Based Architecture:-</b> Breaks down the UI into reusable components, making development modular and manageable.</li>
+
+<li><b>Virtual DOM:-</b> React’s virtual DOM optimizes updates by reducing direct manipulation of the real DOM, improving performance.</li>
+
+<li><b>Declarative Syntax:-</b> Lets developers describe how the UI should look, making code predictable and easier to debug.</li>
+
+<li><b>Unidirectional Data Flow:-</b> Ensures predictable state flow, simplifying state management and improving maintainability.</li>
+
+<li><b>React Hooks:-</b> Hooks allow state and lifecycle features in functional components, simplifying complex logic cleanly.</li>
+      </ul>
+
+      <h3>Modules of ReactJS</h3><br>
+     React.js offers several powerful modules and tools that enhance development efficiency and flexibility. Some of the key modules include:
+      <br><br>
+
+      <ul class="list">
+      <li><b>React Router:-</b> Standard routing library enabling multi-page apps with navigation, dynamic routes, lazy loading, and nested routes.</li>
+
+<li><b>Redux:-</b> Predictable global state container for large apps, offering a centralized store and actions for consistent state updates.</li>
+
+<li><b>React Context:-</b> Provides global state sharing without prop drilling, perfect for simpler state management needs.</li>
+
+<li><b>React Native:-</b> Enables building native mobile apps for iOS and Android using the same React codebase.</li>
+
+<li><b>React DevTools:-</b> Browser extension for inspecting components, props, state, and debugging React apps in real-time.</li>
+
+      </ul>
+
+      <h3>Why Choose React JS ?</h3><br>
+      <ul class="list">
+      <li><b>High Performance:-</b> Virtual DOM ensures minimal real DOM updates, making apps fast and responsive.</li>
+
+<li><b>Reusable Components:-</b> Component reusability reduces redundancy and keeps the codebase clean and maintainable.</li>
+
+<li><b>SEO-Friendly:-</b> Works with SSR to improve indexing and SEO performance for dynamic web apps.</li>
+
+<li><b>Rich Ecosystem:-</b> Huge community and ecosystem with tools, libraries, and solutions for every development need.</li>
+
+<li><b>Cross-Platform Development:-</b> With React Native, developers can build Android and iOS apps using React skills, reducing time and cost.</li>
+      </ul>
+
+      <h3>Get Started with Aahana Networking Today!</h3><br><br>
+      We specialize in leveraging modern technologies like Vue.js to build innovative and user-friendly web
+      applications. Let’s transform your ideas into powerful digital solutions!
+      <br><br>
+
+        <b> Call Us: </b> +91-8595748495 , +91-9122056154 <br> <br>
+      <b> Email Us: </b> aahnanetworking@gmail.com<br>
+      Let’s create powerful, dynamic, and interactive web solutions for your business.
+      </p>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <!-- Related Services -->
+      <div class="sidebar-box">
+        <h4>Related Services</h4>
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">WhatsApp Api Service Provider in Delhi</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Promotional SMS Provider in India</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Best Digital Marketing Company</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Laravel Website Development</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Ecommerce Website & App Development</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Mobile App Development</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Social Media Optimization</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i><a href="#">Web Development in Delhi</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Why choose -->
+      <div class="sidebar-box">
+        <h4>Why You Select ITSolution4India?</h4>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> Work with Full Attention</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> Project Delivered on Time</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> Full Backup Support</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> Affordable Pricing</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> 16x7 WhatsApp Support</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> 12x6 Call Support</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-check"></i> 5 Star Rated Organisation</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="sidebar-box">
+        <h4>Contact With Us</h4>
+
+        <p>
+          <a href="#"><i class="fa-solid fa-location-dot"></i> 1/1 3rd Floor, Vishal
+            Mega Mart, Tilak Nagar, New Delhi – 110018, INDIA</a>
+        </p>
+
+        <p>
+          <a href="tel:+919711347474"><i class="fa-solid fa-phone"></i> +91-8595748495 </a>
+        </p>
+
+        <p>
+          <a href="mailto:Sales@Aahana Networking"><i class="fa-solid fa-envelope"></i>
+            Sales@Aahana Networking</a>
+        </p>
+
+        <p>
+          <a href="mailto:aahnanetworking@gmail.com"><i class="fa-solid fa-envelope"></i> aahnanetworking@gmail.com</a>
+        </p>
+      </div>
+    </aside>
+  </section>
+  <!-- main page layout -->
+
+  <!-- footer and newsletter  -->
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="newsletter-title">Get New Insights Weekly</h2>
+          <p class="newsletter-text">
+            "Stay updated with Aahana Networking! Get the latest trends in
+            website & app development and digital marketing delivered to your
+            inbox."
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="newsletter-box d-flex">
+            <input type="email" class="newsletter-input" placeholder="Email Your Address" />
+            <button class="newsletter-btn">Subscribe →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer-section pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="img/logo.png" width="150" alt="" />
+          <p class="footer-about mt-3">
+            "Aahana Networking specializes in innovative website and app
+            development, coupled with result-driven digital marketing to
+            empower businesses."
+          </p>
+          <a href="#" class="become-btn">Become Partner →</a>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Contact Us</h5>
+
+          <p><i class="fa-solid fa-envelope"></i> aahnanetworking@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-8595748495 </p>
+          <p><i class="fa-brands fa-skype"></i> Call Now</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            1/1 3rd Floor, Vishal Mega Mart Tilak Nagar New Delhi – 110018,
+            INDIA
+          </p>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Company</h5>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pay Now</a></li>
+            <li><a href="#">About Company</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cancellation & Refund Policy</a></li>
+            <li><a href="#">Terms Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Latest Blog -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="footer-title">Latest Blogs</h5>
+          <div class="footer-blog d-flex mt-3">
+            <img src="img/blog1.png" class="blog-thumb" alt="" />
+            <div class="ms-3">
+              <small><i class="fa-regular fa-calendar"></i> 06 Jul, 2025</small>
+              <p class="blog-title">The Ultimate Guide to Laravel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="awards-footer-section">
+    <div class="container">
+      <!-- Left Text -->
+      <div class="awards-text">
+        <h2>
+          Top Web & App Development and<br />
+          Digital Marketing Companies
+        </h2>
+        <p>
+          "We serve diverse industries, including healthcare, e-commerce,
+          education, finance, real estate, and startups, delivering tailored
+          web, app, and digital marketing solutions."
+        </p>
+      </div>
+
+      <!-- Awards Logos -->
+      <div class="awards-logos">
+        <div class="award-item"><img src="images/b1.png" alt="" /></div>
+        <div class="award-item"><img src="images/b2.png" alt="" /></div>
+        <div class="award-item"><img src="images/b3.png" alt="" /></div>
+        <div class="award-item"><img src="images/b4.png" alt="" /></div>
+      </div>
+
+      <hr class="awards-divider" />
+
+      <!-- Social Icons + Copyright -->
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+          <a><i class="fa-brands fa-twitter"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+          <a><i class="fa-brands fa-linkedin"></i></a>
+          <a><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <p class="copy-text">
+          © 2025. All Rights Reserved By Aahana Networking
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer and newsletter  -->
+
+  <!-- testi js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-- testi js  -->
+
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    const speed = 80; // lower = faster
+
+    const options = {
+      threshold: 0.5,
+    };
+
+    const startCounting = (entry) => {
+      if (!entry.isIntersecting) return;
+
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          let count = +counter.innerText;
+
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 25);
+          } else {
+            counter.innerText = target;
+
+            // Add suffixes just like your UI
+            if (target === 500) counter.innerText = "500M+";
+            else if (target === 13) counter.innerText = "13+";
+            else if (target === 250) counter.innerText = "250+";
+            else if (target === 1214) counter.innerText = "1214+";
+            else if (target === 10) counter.innerText = "10+";
+            else if (target === 98.07) counter.innerText = "98.07%";
+          }
+        };
+
+        updateCount();
+      });
+    };
+
+    // Run animation only when section is visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => startCounting(entry));
+    }, options);
+
+    observer.observe(document.querySelector(".about-stats-section"));
+  </script>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

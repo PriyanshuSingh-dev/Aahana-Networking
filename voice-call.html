@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/aha" type="image/x-icon">
+    <title>Voice Call || Aahana Networking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Regular Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+    <!-- Solid Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+    <!-- Bold Rounded Icons -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="images/aahana-logo-removebg.png" height="70" width="150">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="about.html">ABOUT</a></li>
+
+                <!-- Mega Dropdown -->
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="servicesDropdown">
+                        SERVICES
+                    </a>
+
+                    <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+                        <div class="mega-container">
+                            <div class="row gx-4">
+
+                                <!-- Column 1 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms.html">Bulk SMS</a></li>
+                                        <li><a href="ivr.html">IVR Service</a></li>
+                                        <li><a href="smpp.html">SMPP Gateway</a></li>
+                                        <li><a href="voice-call.html">Voice Call</a></li>
+                                        <li><a href="promotional-sms.html">Promotional SMS</a></li>
+                                        <li><a href="transactional-sms.html">Transactional SMS</a></li>
+                                        <li><a href="lead-generation.html">Lead Generation</a></li>
+                                        <li><a href="otp-service.html">OTP Service</a></li>
+                                        <li><a href="long-short-Code.html">Long Short Code</a></li>
+                                        <li><a href="transactional-whatsapp.html">Transactional WhatsApp</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="transactional-email.html">Transactional Email</a></li>
+                                        <li><a href="landing-page-website-design-company.html">Landing Page Website Design</a></li>
+                                        <li><a href="php-website-development-company.html">PHP Website Development</a></li>
+                                        <li><a href="laravel-website-development-in-delhi.html">Laravel Website Development</a></li>
+                                        <li><a href="codeigniter-website-development-in-delhi.html">CodeIgniter Development</a></li>
+                                        <li><a href="python-website-development-in-delhi.html">Python Development</a></li>
+                                        <li><a href="reactjs-website-development-in-delhi.html">ReactJS Development</a></li>
+                                        <li><a href="mobile-app-development-in-delhi.html">Mobile App Development</a></li>
+                                        <li><a href="flutter-app-development-in-delhi.html">Flutter App Development</a></li>
+                                        <li><a href="ecommerce-website-app-development-in-delhi.html">Ecommerce Website Development</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="corporate-website-app-development-company.html">Corporate Website Development</a></li>
+                                        <li><a href="school-website-app-development-company.html">School Website Development</a></li>
+                                        <li><a href="best-digital-marketing-company.html">Best Digital Marketing Company</a></li>
+                                        <li><a href="seo-services.html">SEO Services</a></li>
+                                        <li><a href="social-media-optimization-services.html">Social Media Optimization</a></li>
+                                        <li><a href="lead-generation-service-in-delhi.html">Lead Generation Service in Delhi</a></li>
+                                        <li><a href="bulk-sms-service-in-delhi.html">Bulk SMS Service in Delhi</a></li>
+                                        <li><a href="ppc-services.html">PPC Services</a></li>
+                                        <li><a href="whatsapp-api-service-provider-in-delhi.html">WhatsApp API Service Provider</a></li>
+                                        <li><a href="ivr-service-in-delhi.html">IVR Service in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4 -->
+                                <div class="col-md-3">
+                                    <ul class="mega-links">
+                                        <li><a href="bulk-sms-services-in-india.html">Bulk SMS Services in India</a></li>
+                                        <li><a href="ivr-service-india.html">IVR Service India</a></li>
+                                        <li><a href="voice-call-service-india.html">Voice Call Service India</a></li>
+                                        <li><a href="promotional-sms-provider-in-india.html">Promotional SMS Provider in India</a></li>
+                                        <li><a href="transactional-sms-india.html">Transactional SMS India</a></li>
+                                        <li><a href="smpp-gateway-service-in-india.html">SMPP Gateway Service in India</a></li>
+                                        <li><a href="lead-generation-service-in-india.html">Lead Generation Service in India</a></li>
+                                        <li><a href="transactional-whatsapp-in-india.html">Transactional WhatsApp in India</a></li>
+                                        <li><a href="web-development-in-delhi.html">Web Development in Delhi</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- TECHNOLOGIES Mega Dropdown -->
+<!-- TECHNOLOGIES Simple Mega Dropdown (Single Column) -->
+<li class="nav-item dropdown tech-dropdown">
+    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="techDropdown">
+        TECHNOLOGIES
+    </a>
+
+    <div class="dropdown-menu tech-menu" aria-labelledby="techDropdown">
+        <ul class="tech-links">
+            <li><a href="vuejs-framework.html">VueJS Framework</a></li>
+            <li><a href="nodejs-framework.html">NodeJS Framework</a></li>
+            <li><a href="nextjs-framework.html">NextJS Framework</a></li>
+            <li><a href="tailwind-css.html">Tailwind CSS</a></li>
+            <li><a href="react-js.html">React JS</a></li>
+            <li><a href="android-development.html">Android Development</a></li>
+            <li><a href="java-development.html">Java Development</a></li>
+            <li><a href="django-framework.html">Django Framework</a></li>
+            <li><a href="python-development.html">Python Development</a></li>
+            <li><a href="codeigniter-development.html">Codeigniter Development</a></li>
+            <li><a href="laravel-development.html">Laravel Development</a></li>
+            <li><a href="php-development.html">PHP Development</a></li>
+            <li><a href="flutter.html">Flutter Development</a></li>
+        </ul>
+    </div>
+</li>
+
+
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="blog.html">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="pay-now.html">PAY NOW</a></li>
+            </ul>
+
+            <div class="end">
+                <a href="https://wa.me/8810550514" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
+                <a href="https://wa.me/8810550514" class="btn text-light quote-btn px-4 fw-semibold">Request A Quote</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+    <!-- main page layout -->
+    <section class="voice-banner second">
+        <div class="voice-content">
+            <h1>Voice Call Service</h1>
+            <p>
+                Our Voice call services enable clear, reliable communication for businesses, customer support, and
+                automated notifications efficiently.
+            </p>
+            <a href="#" class="voice-btn">Call Now</a>
+        </div>
+
+        <div class="banner-img">
+            <!-- <img src="images/services/bulk-sms.jpg" alt="Bulk SMS Banner"> -->
+        </div>
+    </section>
+
+    <!-- ================= MAIN SECTION ================= -->
+    <section class="service-page">
+
+        <div class="content-left">
+
+            <h2>Voice Call</h2>
+
+            <p> Indian companies rarely employ bulk voice call services, despite the fact that they are a vital
+                marketing tool. In Delhi, Itsolutions4india is a leading provider of Bulk Voice Calling Services. You
+                can run a Voice Call Campaign to generate quality marketing leads. It is critical to establish your
+                brand in the minds of your target audience.You may advertise and promote your company in a variety of
+                ways. Though our SMS services are the fastest, our Bulk Voice Call Services have received a lot of
+                attention in the marketing process.
+                <br><br>
+                Our Bulk Voice Call Service in Delhi today allows you to transmit a pre-recorded message to a huge
+                number of people. With its simple method, anyone can make their own audio message that can be
+                distributed to a large number of customers, keeping track of records and earning revenues. Overall,
+                using a Web-based phone calling service to market products and services is one of the simplest, fastest,
+                and most cost-effective methods of doing so in today's world. We at Itsolutions4india are the leading
+                Bulk Call Service Provider in Delhi offering the quickest call delivery success.
+                <br><br>
+                Our services can be used to send out essential notices, alerts or reminder notifications, social
+                networking messages, promote company or marketing campaigns, and find the newest deals and product and
+                service updates, among other things. We guarantee the quickest and most reliable Bulk Voice Call
+                Transmission to a huge number of customers. Some of the unique features of our Bulk Voice Call Service
+                in Delhi include audio clip uploading and recording, as well as auto redialing of unsuccessful calls. We
+                offer flexible, cheap, and value-driven Bulk SMS and Voice Call Services to small, medium, and large
+                organizations. We comprehend each company's requirements and adapt them to the views and preferences of
+                its customers. We specialise in high-priority, high-quality services. Our Bulk Voice SMS or Call in
+                Delhi is a call received by a user in which the sender plays a pre-recorded voice message. These calls
+                are made in bulk by the sender to inform customers about their services or promotions.
+            </p>
+
+            <h3>Role of Voice SMS Service Provider in business?</h3>
+            <p>
+                Our Voice SMS in Delhi works in the same way as text messages. You will hear a recorded voice from the
+                other sender side here. We recommend purchasing Voice SMS Services for lead creation purposes. Our Voice
+                SMS generates business, and as a result, they are now being employed as an efficient marketing
+                technique. If the transmission is communicated in local languages, however, it attracts new guests.
+                Outbound Dialers are the best option for all of your company demands. Communication can be more personal
+                and efficient with our Voice SMS services in Delhi solutions.
+            </p>
+            <h3>Benefits of Voice Broadcasting?</h3>
+            <p>
+            <ul class="list">
+                <li><b>Platform for Voice APIs:</b>With our platform for voice APIs, you will be able to use voice
+                    calling integrated into your apps and you can programmatically make, receive, and control calls
+                    across Delhi. Our strong bulk voice SMS service in Delhi is ideal for voice broadcasting for your
+                    business. To use voice services, integrate with our various programming voice APIs or sample code.
+                </li>
+                <li><b>Transactional Voice Call:</b>Itsolutions4india's Voice Alert feature lets you notify customers about essential items like their payment due dates.
+                </li>
+                <li><b>Promotional Voice Calls:</b>With our pre-recorded voice on landlines and mobiles, you may market your products and services with bargains and discounts.
+                </li>
+                <li><b>Voice Drafts:</b>You can keep your voice SMS messages or alerts in our draughts and deliver them later.
+                </li>
+                <li><b>Audio File Transfer:</b> It only takes a minute to upload pre-recorded audio from your system to our itsolutions4india interface.
+                </li>
+                <li><b>Text to Speech:</b>Using our user-friendly interface, you can easily convert all of your SMS messages into voice calls.
+                </li>
+                <li><b>Return on Investment:</b>Our interactive voice broadcasting services produce a return on investment more than three times the initial investment.
+                </li>
+                <li><b>Surveys:</b>Our voice call services in Delhi can be used for surveys, feedback, urgent messages, welcome or thank-you messages, among other things.
+                </li>
+                <li><b>Lead generation:</b>Lead generation is the most cost-effective technique to produce mature and quality leads in Delhi.
+                </li>
+                <li><b>A Scalable Platform:</b>If you have a large, interested customer database or marketing list, you can make hundreds or thousands of calls at once using a scalable platform.
+                </li>
+                <li><b>Voice APIs:</b>With our platform for voice APIs, you will be able to use voice calling integrated into your apps and you can programmatically make, receive, and control calls across Delhi. Our strong bulk voice SMS service in Delhi is ideal for voice broadcasting for your business. Integrate with our voice services to use them.
+                </li>
+                <li><b>Saves you money: </b>It's a very low-cost marketing service. You can start your voice call campaign on our gateway with a cheap budget.
+                </li>
+                <li><b>Improves Productivity:</b>Voice SMS will undoubtedly boost your company's productivity by ensuring that your message is delivered quickly and precisely.
+                </li>
+                <li><b>Pay Just for Answered Calls:</b>On our platform, you only have to pay for connected calls that are successful. Therefore, preserve your credits.
+                </li>
+                <li><b>Assured Delivery:</b>We provide you with a guarantee that your voice call campaigns will be delivered to the recipients' phones.
+                </li>
+                <li><b>Upload Audio Files:</b>You can upload an audio file in the following formats: wav and mp3.
+                </li>
+                <li><b>Customize your experience the way you want: </b>Build an interesting voice experience that you can quickly expand and customise using a variety of customization choices and tools, such as our voice. Then, to create an experience that you and your clients will enjoy, add features like Interactive Voice Response, recording transcriptions, and voice recognition.
+
+                </li>
+                <li><b>Broader-Reach:</b>Audio calling allows you to communicate with people who are unable to read or write.
+                </li>
+                <li><b>Keep your data secure and prevent fraudulent calls:</b>Maintain data security and avoid fraudulent calls by being verified with Itsolutions4india. Ensure that your calls are always answered and that your customers' trust is maintained by becoming verified with Itsolutions4india. By becoming a verified caller, you may improve the reputation of your calls while also helping to prevent illegal robocalls and caller ID spoofing.
+                </li>
+                <li><b>Alerts and notifications:</b>You may adjust how you tell your clients about password resets, low balance alerts, bill reminders, and fraud warnings according to their preferences.
+                </li>
+                <li><b>Call tracking:</b>You may correctly attribute call sources, such as campaigns, search, social, keyword, or display ads, to your business advertising ROI, and then route leads to people in Delhi.
+                </li>
+                <li><b>Masked calling:</b>With our Voice API's temporary phone number proxies in Delhi, you may communicate easily while protecting the sensitive data of both you and your customers.
+                </li>
+                <li><b>IVR :</b>Increase client interaction while lowering operating expenses with a scalable IVR system that can reply to requests, create text-to-speech experiences in hundreds of languages, and more.
+                </li>
+                
+            </ul>
+            <img src="images/services/voice_call1.png" alt="">
+            </p>
+            
+
+            <h3>Voice Call :-</h3>
+            <p>Bulk voice calls area unit termed dead set be in an exceedingly ll|one amongst |one in each of the
+                straightforward communications that permit the corporate to play a pre-recorded voice message for
+                thousands or many call recipients in a short span of your time. Bulk voice decision technology is
+                employed for alerting notifications, business applications, communities, or for promotional functions
+                too. The voice broadcasting spoken by on-line promotion manner is intended by victimization varied apps
+                like client surveys, political campaigns, stock alerts, EMI alerts, and mobile promoting. Depending on
+                the necessity youâ€™ll use an equivalent as per the specifications.
+            </p>
+            <h3>Voice Broadcasting Solutions :-</h3>
+            <p>Itsolutions4India services of voice broadcasting solutions, youâ€™ll continually be in a position for
+                relaying pre-recorded voice messages to any subscriber line or mobile networks across the countries.
+                Victimization pre-managed lists, bulk voice calls area unit aforesaid to be automatic for dialing
+                multiple numbers at one and enjoying a pre-recorded message to the subscriber line or mobile numbers.
+                The technique of the majority voice calls to supply you the advantage of obtaining through an enormous
+                vary of shoppers.</p>
+                <img src="images/services/voice-call2.png" alt="">
+
+        </div>
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Related Services -->
+            <div class="sidebar-box">
+                <h4>Related Services</h4>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i><a href="#">WhatsApp Api Service Provider in Delhi</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Promotional SMS Provider in India</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Best Digital Marketing Company</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Laravel Website Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Ecommerce Website & App Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Mobile App Development</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Social Media Optimization</a></li>
+                    <li><i class="fa-solid fa-check"></i><a href="#">Web Development in Delhi</a></li>
+                </ul>
+            </div>
+
+            <!-- Why choose -->
+            <div class="sidebar-box">
+                <h4>Why You Select ITSolution4India?</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Work with Full Attention</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Project Delivered on Time</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Full Backup Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> Affordable Pricing</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 16x7 WhatsApp Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 12x6 Call Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-check"></i> 5 Star Rated Organisation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="sidebar-box">
+                <h4>Contact With Us</h4>
+
+                <p><a href="#"><i class="fa-solid fa-location-dot"></i>
+                        1/1 3rd Floor, Vishal Mega Mart, Tilak Nagar, New Delhi – 110018, INDIA</a>
+                </p>
+
+                <p><a href="tel:+919711347474"><i class="fa-solid fa-phone"></i> +91-8595748495 </a></p>
+
+                <p><a href="mailto:Sales@Aahana Networking"><i class="fa-solid fa-envelope"></i>
+                        Sales@Aahana Networking</a></p>
+
+                <p><a href="mailto:aahnanetworking@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        aahnanetworking@gmail.com</a></p>
+            </div>
+
+        </aside>
+
+    </section>
+    <!-- main page layout -->
+
+
+
+    <!-- footer and newsletter  -->
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <h2 class="newsletter-title">Get New Insights Weekly</h2>
+                    <p class="newsletter-text">
+                        "Stay updated with Aahana Networking! Get the latest trends in website & app
+                        development and digital marketing delivered to your inbox."
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="newsletter-box d-flex">
+                        <input type="email" class="newsletter-input" placeholder="Email Your Address">
+                        <button class="newsletter-btn">Subscribe →</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section pt-5 pb-4">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <img src="img/logo.png" width="150" alt="">
+                    <p class="footer-about mt-3">
+                        "Aahana Networking specializes in innovative website and app development,
+                        coupled with result-driven digital marketing to empower businesses."
+                    </p>
+                    <a href="#" class="become-btn">Become Partner →</a>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+
+                    <p><i class="fa-solid fa-envelope"></i> aahnanetworking@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8595748495 </p>
+                    <p><i class="fa-brands fa-skype"></i> Call Now</p>
+                    <p><i class="fa-solid fa-location-dot"></i>
+                        1/1 3rd Floor, Vishal Mega Mart
+                        Tilak Nagar New Delhi – 110018, INDIA
+                    </p>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pay Now</a></li>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellation & Refund Policy</a></li>
+                        <li><a href="#">Terms Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Latest Blog -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Latest Blogs</h5>
+                    <div class="footer-blog d-flex mt-3">
+                        <img src="img/blog1.png" class="blog-thumb" alt="">
+                        <div class="ms-3">
+                            <small><i class="fa-regular fa-calendar"></i> 06 Jul, 2025</small>
+                            <p class="blog-title">The Ultimate Guide to Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <section class="awards-footer-section">
+        <div class="container">
+
+            <!-- Left Text -->
+            <div class="awards-text">
+                <h2>Top Web & App Development and<br> Digital Marketing Companies</h2>
+                <p>
+                    "We serve diverse industries, including healthcare, e-commerce, education, finance,
+                    real estate, and startups, delivering tailored web, app, and digital marketing solutions."
+                </p>
+            </div>
+
+            <!-- Awards Logos -->
+            <div class="awards-logos">
+                <div class="award-item"><img src="images/b1.png" alt=""></div>
+                <div class="award-item"><img src="images/b2.png" alt=""></div>
+                <div class="award-item"><img src="images/b3.png" alt=""></div>
+                <div class="award-item"><img src="images/b4.png" alt=""></div>
+            </div>
+
+            <hr class="awards-divider">
+
+            <!-- Social Icons + Copyright -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <p class="copy-text">© 2025. All Rights Reserved By Aahana Networking</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer and newsletter  -->
+
+    <!-- testi js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- testi js  -->
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 80; // lower = faster
+
+        const options = {
+            threshold: 0.5
+        };
+
+        const startCounting = (entry) => {
+            if (!entry.isIntersecting) return;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = +counter.innerText;
+
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 25);
+                    } else {
+                        counter.innerText = target;
+
+                        // Add suffixes just like your UI
+                        if (target === 500) counter.innerText = "500M+";
+                        else if (target === 13) counter.innerText = "13+";
+                        else if (target === 250) counter.innerText = "250+";
+                        else if (target === 1214) counter.innerText = "1214+";
+                        else if (target === 10) counter.innerText = "10+";
+                        else if (target === 98.07) counter.innerText = "98.07%";
+                    }
+                };
+
+                updateCount();
+            });
+        };
+
+        // Run animation only when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => startCounting(entry));
+        }, options);
+
+        observer.observe(document.querySelector(".about-stats-section"));
+    </script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
