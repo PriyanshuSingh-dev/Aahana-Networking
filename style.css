@@ -731,8 +731,8 @@
 
 .client-box img {
     max-width: 100%;
-    max-height: 55px;
-    object-fit: contain;
+    max-height: 125px;
+    object-fit: cover;
 }
 
 /* RESPONSIVE FIXES */
@@ -1196,6 +1196,7 @@
 .footer-links li {
     list-style: none;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .footer-links a {
@@ -1419,7 +1420,7 @@ text-align: center;
 .about-banner {
     height: 40vh;
     width: 100%;
-    background: url('images/about-banner.jpg') center/cover no-repeat;
+    background: url('images/about-banner.png') center /cover no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1471,6 +1472,48 @@ text-align: center;
     .about-banner-content h1 {
         font-size: 30px;
         letter-spacing: 1px;
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #ffcccb;
+}
+
+.breadcrumb span {
+    color: #fff;
+    font-size: 18px;
+}
+
+.breadcrumb p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .breadcrumb a, .breadcrumb p, .breadcrumb span {
+        font-size: 16px;
     }
 }
 
@@ -1626,7 +1669,7 @@ text-align: center;
 .contact-banner {
     height: 40vh;
     width: 100%;
-    background: url('images/contact-banner.jpg') center/cover no-repeat;
+    background: url('images/contact-banner') center/cover no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
@@ -2193,16 +2236,18 @@ text-align: center;
 /* smpp css */
 .smpp-banner {
     display: flex;
-    height: 49vh;
+    height: 57vh;
     justify-content: space-between;
     align-items: center;
     padding: 60px 5%;
- 
-    background: url('images/services/smpp.jpg') no-repeat center/cover;
+    
+    background: url('images/services/smpp-service.png') no-repeat center;
+     background-size: 100% 97%; 
     border-bottom: 4px solid #0b4dbb;
-     position: relative;
-    background-position: center 70%; 
+    position: relative;
+    background-position: center 70%;
 }
+
 
 .smpp-banner::before {
     content: "";
@@ -2368,7 +2413,7 @@ text-align: center;
     justify-content: space-between;
     align-items: start;
     padding: 90px 5%;
-    background: url('images/services/promotional-sms.jpg') no-repeat center/cover;
+    background: url('images/services/Promotional.png') no-repeat center/cover;
     border-bottom: 4px solid #0b4dbb;
      position: relative;
     top: 20%;
@@ -2423,18 +2468,17 @@ text-align: center;
 
 /* transaction banner  */
 .transaction-banner {
-    display: flex;
-    height: 49vh;
+ display: flex;
+    height: 60vh;
     justify-content: space-between;
-    align-items: start;
-    object-fit: cover;
-    padding: 90px 5%;
-    background: url('images/services/OTP.png') no-repeat center/cover;
-    border-bottom: 4px solid #0b4dbb;
-     position: relative;
-     background-position: center 20%;
+    align-items: center;
+    padding: 60px 5%;
 
-    top: 30%;
+    background: url('images/services/transactional-sms.png') no-repeat center;
+    background-size: 100% 99.9%;   /* ⬅️ sirf upar-niche zoom out */
+    border-bottom: 4px solid #0b4dbb;
+    position: relative;
+    background-position: center 70%;
 }
 
 .transaction-banner::before {
@@ -2740,6 +2784,386 @@ text-align: center;
     width: 320px;
 }
 /* landing banner  */
+/* digi banner  */
+.digi-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/digital-marketing.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 40%;
+
+    top: 30%;
+}
+
+.digi-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+ 
+ 
+.digi-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.digi-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.digi-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.digi-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.digi-img img {
+    width: 320px;
+}
+/* digi banner  */
+
+/* seo banner  */
+.seo-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/seo-banner.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 40%;
+
+    top: 30%;
+}
+
+.seo-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+ 
+ 
+.seo-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.seo-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.seo-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.seo-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.seo-img img {
+    width: 320px;
+}
+/* seo banner  */
+
+/* smo banner  */
+.smo-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/smo.jpg') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.smo-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.smo-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.smo-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.smo-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.smo-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.smo-img img {
+    width: 320px;
+}
+/* smo banner  */
+/* web banner  */
+.web-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/Web-Development-Banner.jpg') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 35%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.web-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.web-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.web-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.web-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.web-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.web-img img {
+    width: 320px;
+}
+/* web banner  */
+/* was banner  */
+.was-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/tws.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: top 10%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.was-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.was-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.was-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.was-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.was-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.was-img img {
+    width: 320px;
+}
+/* was banner  */
+/* ppc banner  */
+.ppc-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/ppc.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.ppc-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.ppc-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.ppc-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.ppc-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.ppc-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.ppc-img img {
+    width: 320px;
+}
+/* ppc banner  */
 
 /* php banner  */
 .php-banner {
@@ -3212,7 +3636,7 @@ text-align: center;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.08);
 }
  
  
@@ -3226,13 +3650,13 @@ text-align: center;
 .ecomm-content h1 {
     font-size: 38px;
     font-weight: 800;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 1.8rem;
 }
 
 .ecomm-content p {
     margin: 15px 0;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     max-width: 500px;
     margin-bottom: 2rem;
