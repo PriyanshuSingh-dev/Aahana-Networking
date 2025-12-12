@@ -1,70 +1,121 @@
  
   
-  /* css for nav  */
-  /* ---------- Mega menu base ---------- */
- /* ===============================
-   🔥 MEGA MENU — FINAL STABLE CSS
-   =============================== */
+  /* ===============================
+ 🔥 NAVBAR + MEGA MENU FINAL CSS
+=============================== */
 
-/* Fix mega menu placement */
-.mega-dropdown {
-    position: static !important;
-    
+/* Base navbar */
+.navbar {
+    z-index: 10000;
+    border-bottom: 4px solid #b21710;
 }
 
-/* Main mega menu */
+.navbar .nav-link {
+    color: #0b1a39;
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover {
+    color: #b21710;
+}
+
+/* Request Quote Button */
+.quote-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    border-radius: 8px;
+    padding: 9px 18px;
+    border: 0;
+    color: #fff !important;
+}
+
+.quote-btn:hover {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    box-shadow: none;
+}
+
+.quote-btn:active {
+    transform: scale(0.97);
+}
+
+/* Phone Icon */
+.end i {
+    font-size: 2.4rem;
+    color: #b21710;
+    cursor: pointer;
+}
+
+.end i:hover {
+    color: #ff6666;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+
+/* ===============================
+   🔥 SERVICES — MEGA MENU
+=============================== */
+
+.mega-dropdown {
+    position: static !important;
+}
+
 .mega-menu {
-     
     position: absolute;
     left: 0;
     right: 0;
     top: 75% !important;
     width: 100%;
     background: #ffffff;
-    padding: 25px 0 30px 0;
+    padding: 25px 0 30px;
     border: none;
     border-radius: 0;
     display: none;
     z-index: 9999;
     box-shadow: 0 6px 20px rgba(6, 18, 67, 0.12);
-    margin-top: 0 !important;
-    
 }
 
-/* Show mega menu on hover (desktop) */
+/* Desktop hover */
 @media (min-width: 992px) {
-    .mega-dropdown:hover .mega-menu,
-    .mega-dropdown:focus-within .mega-menu {
+    .mega-dropdown:hover .mega-menu {
         display: block !important;
-        
     }
 }
 
-/* Very important: prevent hover collapse issue */
+/* Prevent hover flicker */
 .mega-menu:hover {
     display: block !important;
 }
 
-/* Invisible hover bridge (prevents flicker) */
-.mega-dropdown::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 12px; /* invisible hover area */
-}
-
-/* Inner container */
+/* Mega menu container */
 .mega-menu .mega-container {
-     
     width: 100%;
     max-width: 1400px;
     margin: auto;
     padding: 0 25px;
 }
 
-/* Link columns */
+/* Columns */
+@media (max-width: 991.98px) {
+
+    .mega-menu .col-md-3 {
+        width: 50% !important;   /* 2 columns */
+        padding: 10px 10px;
+    }
+
+    .mega-container .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Links */
 .mega-links {
     list-style: none;
     padding: 0;
@@ -89,24 +140,21 @@
     transform: translateX(7px);
 }
 
-/* Column spacing */
-.mega-menu .col-md-3 {
-    padding-left: 25px;
-}
 
-/* ================
-   📱 Mobile View
-   ================ */
+/* ===============================
+   📱 MOBILE — MEGA MENU FIX
+=============================== */
+
 @media (max-width: 991.98px) {
 
     .mega-menu {
         position: static !important;
         box-shadow: none !important;
         padding: 10px 0;
-        display: none !important; /* hide in mobile until clicked */
+        display: none !important;
     }
 
-    /* Bootstrap default dropdown open on click */
+    /* Bootstrap toggles .show class on click */
     .mega-dropdown.show .mega-menu {
         display: block !important;
     }
@@ -120,16 +168,19 @@
         padding: 10px 0;
     }
 
-    /* mobile indicator */
+    /* Rotate arrow */
     .mega-dropdown .dropdown-toggle::after {
         transform: rotate(90deg);
     }
 }
 
 
-/* TECHNOLOGIES One-Column Dropdown */
+
+/* ===============================
+   🔥 TECHNOLOGIES MENU
+=============================== */
+
 .tech-dropdown {
-     
     position: relative;
 }
 
@@ -137,42 +188,32 @@
     width: 330px;
     padding: 15px 20px;
     border-radius: 12px;
+    background: #ffffff;
     border: none;
     box-shadow: 0 6px 22px rgba(0,0,0,0.12);
     display: none;
-    background: #ffffff;
-
     position: absolute;
-    top: 100%;   /* 👈 DROPDOWN KO NICHE LANE KA CONTROL */
+    top: 100%;
     left: 80%;
     transform: translateX(-50%);
-
-    z-index: 9999; /* 👈 ISSE HATNA NAHI CHAHIYE */
+    z-index: 9999;
+    margin-left: 20px;
 }
+
+/* Desktop hover */
 @media (min-width: 992px) {
     .tech-dropdown:hover .tech-menu {
-        display: block;
+        display: block !important;
     }
 }
 
-
-/* Center align for Technologies dropdown */
-.tech-menu .tech-links {
-    padding-left: 40px;
-     
-}
-
-.tech-menu .tech-links li a {
-    padding-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-    .tech-dropdown:hover .tech-menu {
-        display: block;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        max-height: none !important;
+        overflow-y: visible !important;  /* scroll STOP */
     }
 }
-
-/* inner UL styling */
+/* Technology dropdown list */
 .tech-links {
     list-style: none;
     padding: 0;
@@ -182,6 +223,7 @@
 
 .tech-links li {
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .tech-links li a {
@@ -197,111 +239,40 @@
     transform: translateX(6px);
 }
 
-/* Mobile Handling */
+
+/* ===============================
+   📱 MOBILE — TECHNOLOGIES FIX
+=============================== */
+
 @media (max-width: 991px) {
     .tech-menu {
-        width: 100%;
-        position: static;
-        box-shadow: none;
+        width: 100% !important;
+        position: static !important;
         padding-left: 10px;
+        box-shadow: none !important;
+        display: none;
+
+        left: 0 !important;             /* ADD */
+        transform: none !important;      /* ADD */
+    }
+
+    .tech-dropdown.show .tech-menu {
+        display: block !important;
     }
 }
 
-/* Navbar styling */
-.navbar {
-    z-index: 10000;
-}
 
-.navbar .nav-link {
-    color: #0b1a39;
-    font-weight: 700;
-}
+/* ===============================
+   DESKTOP BASE DROPDOWN FIX
+=============================== */
 
-.navbar .nav-link:hover {
-    color: #b21710;
-}
-
-/* Request Quote Button */
-.quote-btn {
-    background: linear-gradient(90deg,#b21710,#ff6b6b);
-    border-radius: 8px;
-    padding: 9px 18px;
-    box-shadow: 0 6px 18px rgba(178,23,16,0.18);
-    border: 0;
-    color: #fff !important;
-}
-
-/* Toggler button */
-.navbar-toggler {
-    border-color: rgba(11, 77, 187, 0.2);
-}
-
-/* Remove bootstrap default borders */
-.dropdown-menu.mega-menu {
-    border: none !important;
-     
-}
-
-
-  /* css for nav  */
-  
-  /* navbar */
-  @media (min-width: 992px) {  /* Only desktop */
+@media (min-width: 992px) {
     .navbar .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
     }
 }
 
- 
-.navbar{
-    border-bottom: 4px solid #b21710;
-}
-.quote-btn {
-  
-       background:  linear-gradient(45deg, #b21710, #ff4d6b);
-    /* box-shadow: 0 8px 20px rgba(255, 30, 30, 0.5); */
-    /* transform: translateY(-2px) scale(1.05); */
-  
-}
-
-.quote-btn:hover {
-    background:  linear-gradient(45deg, #b21710, #ff4d6b);
-    box-shadow: 0 0px 0px rgba(255, 30, 30, 0);
-    /* transform: translateY(-2px) scale(1.05); */
-    color: #ffffff;
-}
-
-.quote-btn:active {
-    transform: scale(0.97);
-    
-}
-
-.end i {
-    
-    border-radius: 50%;
-    font-size: 2.4rem;
-    color: #b21710;
-    cursor: pointer;
-}
-
-.end i:hover{
-     color:   #ff6666;
-    box-shadow: 0 0px 0px rgba(255, 30, 30, 0);
-}
-.end{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-/* navbar dropdown */
-
-/* navbar dropdown */
- 
-
-   /* navbar */
    
    /* Hero section custom styling */
         .hero-section {

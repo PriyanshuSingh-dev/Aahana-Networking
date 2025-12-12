@@ -41,22 +41,24 @@
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
+
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link text-dark fw-bolder px-3" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="about.html">ABOUT</a></li>
 
-                <!-- Mega Dropdown -->
+                <!-- SERVICES Mega Menu -->
                 <li class="nav-item dropdown mega-dropdown">
-                    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="servicesDropdown">
-                        SERVICES
+                    <a class="nav-link dropdown-toggle px-3"
+                       href="#" id="servicesDropdown"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                       SERVICES
                     </a>
 
                     <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
                         <div class="mega-container">
                             <div class="row gx-4">
 
-                                <!-- Column 1 -->
                                 <div class="col-md-3">
                                     <ul class="mega-links">
                                         <li><a href="bulk-sms.html">Bulk SMS</a></li>
@@ -72,7 +74,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 2 -->
                                 <div class="col-md-3">
                                     <ul class="mega-links">
                                         <li><a href="transactional-email.html">Transactional Email</a></li>
@@ -88,7 +89,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 3 -->
                                 <div class="col-md-3">
                                     <ul class="mega-links">
                                         <li><a href="corporate-website-app-development-company.html">Corporate Website Development</a></li>
@@ -104,7 +104,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 4 -->
                                 <div class="col-md-3">
                                     <ul class="mega-links">
                                         <li><a href="bulk-sms-services-in-india.html">Bulk SMS Services in India</a></li>
@@ -124,46 +123,48 @@
                     </div>
                 </li>
 
-                <!-- TECHNOLOGIES Mega Dropdown -->
-<!-- TECHNOLOGIES Simple Mega Dropdown (Single Column) -->
-<li class="nav-item dropdown tech-dropdown">
-    <a class="nav-link text-dark fw-bolder px-3 dropdown-toggle" href="#" id="techDropdown">
-        TECHNOLOGIES
-    </a>
+                <!-- TECHNOLOGIES -->
+                <li class="nav-item dropdown tech-dropdown">
+                    <a class="nav-link dropdown-toggle px-3"
+                       id="techDropdown" href="#"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                       TECHNOLOGIES
+                    </a>
 
-    <div class="dropdown-menu tech-menu" aria-labelledby="techDropdown">
-        <ul class="tech-links">
-            <li><a href="vuejs-framework.html">VueJS Framework</a></li>
-            <li><a href="nodejs-framework.html">NodeJS Framework</a></li>
-            <li><a href="nextjs-framework.html">NextJS Framework</a></li>
-            <li><a href="tailwind-css.html">Tailwind CSS</a></li>
-            <li><a href="react-js.html">React JS</a></li>
-            <li><a href="android-development.html">Android Development</a></li>
-            <li><a href="java-development.html">Java Development</a></li>
-            <li><a href="django-framework.html">Django Framework</a></li>
-            <li><a href="python-development.html">Python Development</a></li>
-            <li><a href="codeigniter-development.html">Codeigniter Development</a></li>
-            <li><a href="laravel-development.html">Laravel Development</a></li>
-            <li><a href="php-development.html">PHP Development</a></li>
-            <li><a href="flutter.html">Flutter Development</a></li>
-        </ul>
-    </div>
-</li>
+                    <div class="dropdown-menu tech-menu">
+                        <ul class="tech-links">
+                            <li><a href="vuejs-framework.html">VueJS Framework</a></li>
+                            <li><a href="nodejs-framework.html">NodeJS Framework</a></li>
+                            <li><a href="nextjs-framework.html">NextJS Framework</a></li>
+                            <li><a href="tailwind-css.html">Tailwind CSS</a></li>
+                            <li><a href="react-js.html">React JS</a></li>
+                            <li><a href="android-development.html">Android Development</a></li>
+                            <li><a href="java-development.html">Java Development</a></li>
+                            <li><a href="django-framework.html">Django Framework</a></li>
+                            <li><a href="python-development.html">Python Development</a></li>
+                            <li><a href="codeigniter-development.html">CodeIgniter Development</a></li>
+                            <li><a href="laravel-development.html">Laravel Development</a></li>
+                            <li><a href="php-development.html">PHP Development</a></li>
+                            <li><a href="flutter.html">Flutter Development</a></li>
+                        </ul>
+                    </div>
+                </li>
 
+                <li class="nav-item"><a class="nav-link px-3" href="blog.html">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="pay-now.html">PAY NOW</a></li>
 
-                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="blog.html">BLOG</a></li>
-                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="contact.html">CONTACT</a></li>
-                <li class="nav-item"><a class="nav-link fw-bolder text-dark px-3" href="pay-now.html">PAY NOW</a></li>
             </ul>
 
             <div class="end">
-                <a href="https://wa.me/8810550514" target="_blank"><i class="fa-solid fa-square-phone"></i></a>
-                <a href="https://wa.me/8810550514" class="btn text-light quote-btn px-4 fw-semibold">Request A Quote</a>
+                <a href="https://wa.me/8810550514"><i class="fa-solid fa-square-phone"></i></a>
+                <a href="https://wa.me/8810550514" class="btn quote-btn">Request A Quote</a>
             </div>
 
         </div>
     </div>
 </nav>
+
 
 
 
@@ -1120,5 +1121,17 @@ observer.observe(document.querySelector(".about-stats-section"));
 <!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function (e) {
+        let parent = this.closest(".dropdown");
+        parent.classList.toggle("show");
+    });
+});
+</script>
+
 </body>
 </html>
