@@ -3014,6 +3014,329 @@ text-align: center;
     width: 320px;
 }
 /* smo banner  */
+
+/* vue banner  */
+.vue-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/vue-transition-banner.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.vue-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.vue-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.vue-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.vue-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.vue-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.vue-img img {
+    width: 320px;
+}
+/* vue banner  */
+
+/* node banner  */
+.node-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/NodeJS-Banner.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 150px;
+    top: 30%;
+}
+
+.node-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.node-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.node-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.node-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.node-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.node-img img {
+    width: 320px;
+}
+/* node banner  */
+
+/* next banner  */
+.next-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/next-js.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 150px;
+    top: 30%;
+}
+
+.next-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.next-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.next-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.next-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.next-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.next-img img {
+    width: 320px;
+}
+/* tail banner  */
+
+/* java banner  */
+.java-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/JAVA-DEV.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.java-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.java-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.java-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.java-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.java-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.java-img img {
+    width: 320px;
+}
+/* java banner  */
+/* tail banner  */
+.tail-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/Tailwind-banner.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.tail-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.tail-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.tail-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.tail-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.tail-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.tail-img img {
+    width: 320px;
+}
+/* next banner  */
+
+
+
+
 /* web banner  */
 .web-banner {
     display: flex;
