@@ -3270,6 +3270,137 @@ text-align: center;
     width: 320px;
 }
 /* java banner  */
+
+
+
+/* py banner  */
+.py-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/python-banner.jpg') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 80%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.py-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.py-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.py-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.py-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.py-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.py-img img {
+    width: 320px;
+}
+/* py banner  */
+
+/* lara banner  */
+.lara-banner {
+    display: flex;
+    height:60vh;
+    justify-content: space-between;
+    align-items: start;
+    object-fit: cover;
+    padding: 90px 5%;
+    background: url('images/services/laravel-dev.png') no-repeat center/cover;
+    border-bottom: 4px solid #0b4dbb;
+     position: relative;
+     background-position: center 42%;
+    padding-left: 50px;
+    top: 30%;
+}
+
+.lara-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+ 
+ 
+.lara-content {
+    max-width: 50%;
+      position: relative;
+      margin-top:5rem;
+    z-index: 2;
+}
+
+.lara-content h1 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+}
+
+.lara-content p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.lara-btn {
+    background: linear-gradient(45deg, #b21710, #ff4d6b);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.lara-img img {
+    width: 320px;
+}
+/* lara banner  */
+
 /* tail banner  */
 .tail-banner {
     display: flex;
